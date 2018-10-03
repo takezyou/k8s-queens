@@ -8,4 +8,4 @@ RUN sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/CentOS-OpenStack-queens
 RUN  yum -y install centos-release-openstack-queens epel-release
 RUN  yum -y install openstack-packstack python-pip
 
-CMD [packstack --allinone]
+CMD packstack --allinone
